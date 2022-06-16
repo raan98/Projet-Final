@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+    <!--Todo esto es el encabezado-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet-Final-2022</title>
+    <link rel="stylesheet" href="../CSS/style5.css">
+</head>
+    <!--Todo esto es el cuerpo-->
+    <h1>Coupe du monde 2022</h1>
+<body>
+    <main>
+        <nav class="nav">
+            <!--Liens aux différentes pages-->
+            <a href="./index.html">Accueil</a>
+            <a href="./Plan du site.html">Plan du site</a>
+            <a href="./Sites d'interets.html">Sites d'intérets</a>
+            <a href="./FAQ.html">F.A.Q</a>
+            <a class="nav-link active" href="./À propos.html">À propos</a>
+            <a href="./Musique.html">Musique</a>
+            <a href="./Stades.html">Stades</a>
+        </nav>
+        <h2 class="Formulario">Formulaire de questions</h2>
+    </main>
+    
+    <div class="Contactez-nous">
+       <h2>Contactez-nous</h2>
+       <p>Un problème, une question ou juste savoir plus d'informations ? N'hésitez pas à utiliser ce formulaire pour prendre contact avec nous!</p>
+       
+       <form>
+           <div>
+               <label for="nom">Votre Nom</label>
+               <input type="text" id="nom" name="nom" placeholder="Ruben" required>
+           </div>
+           
+           <div>
+               <label for="Courriel">Votre Courriel</label>
+               <input type="text" id="Courriel" name="Courriel" placeholder="jose2425@hotmail.com" required>
+           </div>
+
+           <div>
+               <label for="Sujet">Quel est le sujet de votre message</label>
+               <select name="sujet" id="sujet" required>
+                   <option value="" disable selected hidden>Choisissez le sujet de votre message</option>
+                   <option value="probleme-compte">Problème avec mon compte fifa</option>
+                   <option value="question-specifique">Question plus spécifique</optio>
+                   <option value="dates-calendrier">Savoir les dates officielles</option>
+                   <option value="Autres">Autre...</option>
+               </select>
+           </div>
+
+           <div>
+               <label for="message">Votre message</label>
+               <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car..." required></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Envoyer mon message</button>
+            </div>
+        </form>   
+    </div>
+
+
+</body>
+</html>
